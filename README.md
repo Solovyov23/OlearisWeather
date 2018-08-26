@@ -3,7 +3,7 @@ Weather application.
 
 Погодное приложение.
 Используемые технологии:
-Retrofit 2, okhttp, GoogleMaps api. openweathermap api. Db (SQLiteDatabase or Room)
+Retrofit 2, okhttp, GoogleMaps api. openweathermap api. Db (SQLiteDatabase)
 https://openweathermap.org (провайдер погоды).
 
 Описание приложения:
