@@ -68,18 +68,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             case R.id.bAddNewPlace:
 
                 // If the important data were empty, then
-                if(marker != null || marker.getTitle() == "" || marker.getTag() == "")
+                if(marker == null || marker.getTitle() == "" || marker.getTag() == "")
                 {
                     // Check your internet connection
                     NetworkHelper.isOnline(getApplicationContext());
                 }
-                // Return result to main activity
-                intent.putExtra("name", marker.getTitle() + "");
-                intent.putExtra("full_name", marker.getTag() + "");
-                intent.putExtra("latitude", marker.getPosition().latitude);
-                intent.putExtra("longitude", marker.getPosition().longitude);
-                setResult(RESULT_OK, intent);
-                finish();
+                else
+                {
+                    // Return result to main activity
+                    intent.putExtra("name", marker.getTitle() + "");
+                    intent.putExtra("full_name", marker.getTag() + "");
+                    intent.putExtra("latitude", marker.getPosition().latitude);
+                    intent.putExtra("longitude", marker.getPosition().longitude);
+                    setResult(RESULT_OK, intent);
+                    finish();
+                }
                 break;
             case R.id.bCancel:
                 setResult(RESULT_CANCELED, intent);
