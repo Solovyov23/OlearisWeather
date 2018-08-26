@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OlearisWeather</string>
+    <string name="action_settings">Settings</string>
+    <string name="press_plus_button_on_this_screen_to_add_favorite_location">Press plus button on this screen to add favorite location</string>
+    <string name="not_internet_connection">Not internet connection!</string>
+    <string name="list_is_empty">List is empty</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="add_new_place">Add new place</string>
+    <string name="cancel">Cancel</string>
+    <string name="remove_city">remove city</string>
+    <string name="kiev_ukraine">Kiev, Ukraine</string>
+    <string name="kiev">Kiev</string>
+    <string name="city_already_exists">City already exists</string>
+    <string name="check_weather">Check Weather</string>
+    <string name="press_button_on_this_screen_to_add_current_weather_forecast">Press button on this screen to add current weather forecast</string>
+</resources>
