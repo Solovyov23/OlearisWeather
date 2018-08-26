@@ -68,7 +68,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             case R.id.bAddNewPlace:
 
                 // If the important data were empty, then
-                if(marker == null || marker.getTitle() == "" || marker.getTag() == "")
+                if(marker != null || marker.getTitle() == "" || marker.getTag() == "")
                 {
                     // Check your internet connection
                     NetworkHelper.isOnline(getApplicationContext());
